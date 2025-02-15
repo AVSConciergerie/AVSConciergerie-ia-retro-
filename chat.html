@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de Chat Responsive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button id="new-chat-btn">+ Nouvelle conversation</button>
+            </div>
+            <ul class="history-list">
+                <li>Conversation 1</li>
+                <li>Conversation 2</li>
+            </ul>
+        </aside>
+        <div class="main-content">
+          <header>
+            <a href="index.html">
+              <img src="logo.png" alt="Logo" class="logo">
+            </a>
+              <button class="login-btn">Connexion</button>
+          </header>
+
+          <main class="chat-area">
+              <div class="message user-message">
+                  <p>Bonjour, comment allez-vous ?</p>
+              </div>
+              <div class="message bot-message">
+                  <p>Je vais bien, merci !</p>
+              </div>
+              <div class="message bot-message loading">
+                  <p>Réflexion...</p>
+              </div>
+          </main>
+          <div class="input-bar">
+                <textarea id="message-input" placeholder="Tapez votre message..."></textarea>
+                <button id="send-btn">➤</button>
+                <button class="attach-btn">📎</button>
+                <button class="emoji-btn">😊</button>
+            </div>
+        </div>
+    </div>
+    <div class="theme-toggle-container">
+        <label class="theme-toggle-label">
+            <input type="checkbox" class="theme-toggle-checkbox" id="theme-toggle">
+            <span class="theme-toggle-slider"></span>
+        </label>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
